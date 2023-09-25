@@ -1,26 +1,15 @@
 
 const showDuke = () => {
-    document.getElementById("duke").classList.remove("duke");
+    document.getElementById("duke").classList.remove("hide");
 }
 
 const hideDuke = () => {
-    document.getElementById("duke").classList.add("duke");
+    document.getElementById("duke").classList.add("hide");
 }
-
-window.onload = () => {
-    document.getElementById("button-show").onclick = showDuke;
-    document.getElementById("button-hide").onclick = hideDuke;
-}
-
-
 
 const moveSquare = () => {
     document.getElementById("square").classList.add("move-square");
-}
-
-window.onload = () => {
-    document.getElementById("button-move").onclick = moveSquare;
-}
+}  
 
 const writeMessage = () => {
     const productName = document.getElementById("txt-product-name").value;
@@ -28,14 +17,14 @@ const writeMessage = () => {
 
     const messageP = document.getElementById("message");
 
-    messageP.innerHTML = productName;
-    messageP.innerHTML = productComment;
-
-
+    messageP.innerHTML += `<section class="comment"><h3>${productName}</h3><p>${productComment}</p></section>`;
 }
 
 window.onload = () => {
-    document.getElementById("txt-product-name").onclick = writeMessage;
-    document.getElementById("txt-comment").click = writeMessage;
+    document.getElementById("button-show").onclick = showDuke;
+    document.getElementById("button-hide").onclick = hideDuke;
 
+    document.getElementById("button-move").onclick = moveSquare;
+
+    document.getElementById("message-button").onclick = writeMessage;
 }

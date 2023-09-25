@@ -17,6 +17,11 @@ body{
     border-radius: 2px;
 }
 
+img {
+    height: 300px;
+    width: 250px;
+}
+
 .col3 h1 {
     text-align: center;
 }
@@ -38,6 +43,13 @@ body{
     animation-name: bounce;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+}
+
+.comment {
+    border:1px solid gray;
+    margin:5px;
+    padding:5px;
+    background:pink;
 }
 
 @keyframes bounce {
