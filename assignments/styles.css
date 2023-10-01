@@ -44,7 +44,7 @@ body{
 /* Larger Resolution */
 @media (min-width: 900px) {
     #main-nav ul, .flex-container {
-        display: flex;
+        flex-wrap: wrap;
     }
 }
 
