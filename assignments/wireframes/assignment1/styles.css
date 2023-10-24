@@ -1,70 +1,121 @@
 /* Structure */
-#main-header {
-    background-color: tan;
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
 }
 
-#main-content {
-    background-color:deepskyblue ;
-    padding: 5px;
+/* Images */
+.images
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 
-
-
-img {
-    padding: 5px;
-    margin: 5px;
-    border-radius: 2px;
+.hidden
+{
+    display: none;
 }
 
-.col1of5 {
-    background-color: whitesmoke;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 2px;
+/* Grills */
+.grills
+{
+    background-color: #c0b283;
+}
+
+ 
+
+
+
+
+/* Typeography */
+#header-h1
+{
     text-align: center;
 }
 
-#grills {
-    align-self: baseline;
-}
 
-/* Nav */
-#main-nav ul {
-    padding-left: 0;
+/* main-nav */
+#hamburger div 
+{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
 }
-
-#main-nav li {
+.hide-small
+{
+    display: none;
+}
+#nav-items li 
+{
     list-style-type: none;
-    padding: 5px;
-    background-color: lightblue;
-    border-bottom: tan;
 }
-
-#main-nav a {
+#nav-items a 
+{
     text-decoration: none;
     color: black;
 }
 
-/* Typography */
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#main-header h1 {
-    text-align: center;
-}
 
 
-/* Larger Resolution */
-@media (min-width: 900px) {
-    #main-nav ul, .flex-container, img , .col1of5 {
+
+@media only screen and (min-width: 600px) 
+{
+    #hamburger div
+    {
+        display: none;
+    }
+    .hide-small
+    {
+        display: block;
+    }
+    #nav-items li
+    {
+        display: inline-block;
+        justify-content: space-between;
+        margin-left: 6.5%;  
+        margin-top: 2%;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .grills
+    {
         display: flex;
-        justify-content: center;
+        margin-left: 6.5%;
+        margin-right: 6.5%;
+        margin-top: 5%; 
+        padding: 5px;
+        padding-bottom: 5%;
+        background-color: salmon;
+    }
+    #grill-h1
+    {
+        text-align: center;
+    }
+    #grill-h2
+    {
+        text-align: center;
+    }
+    #img1
+    {
+        display: block;
+        margin: auto;
+        width: 250px;
+        height: 150px;
+        padding-top: 1px;
     }
 
-    #main-nav li, .col1of5 {
-        flex: 1;
+    #img2
+    {
+        margin-left: 6.5%;
+        margin-right: 6.5%;
+        margin-top: 5%; 
+        padding: 5px;
+        width: 1315px;
+        height: 200px;
     }
 
 

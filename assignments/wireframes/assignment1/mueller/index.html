@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Flexbot</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
+
+<head> 
+    <title>Capital Grill</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script> 
+</head>
 
     <body>
-        <header id="main-header">
-            <img src="https://place-hold.it/75x75">
-            <h1>Capital Grill</h1>
-            <nav id="main-nav">
-                <ul>
-                    <li><a href="assignments/wireframes/index.html">Home</a></li>
-                    <li><a href="assignments/wireframes/blackstone/index.html">Blackstone</a></li>
-                    <li><a href="assignments/wireframes/weber/index.html">Weber</a></li>
+        <header>
+            <h1 id="header-h1">Capital Grill</h1>
+            
+            <nav id="nav-toggle">
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>  
+                <div id="nav-items" class="hide-small">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../blackstone/index.html">Blackstone</a></li>
+                    <li><a href="../cuisinart/index.html">Cuisinart</a></li>
+                    <li><a href="../mastercook/index.html">Mastercook</a></li>
                     <li><a href="#">Mueller</a></li>
-                    <li><a href="assignments/wireframes/cuisinart/index.html">Cuisinart</a></li>
-                    <li><a href="assignments/wireframes/mastercook/index.html">Master Cook</a></li>
-                </ul>
-            </nav>
+                    <li><a href="../weber/index.html">Weber</a></li>
+                    <li><a href="../contactme/index.html">Contact Me</a></li>
+                </div>
         </header>
         <section class="top">
             <div class="flex-container">
-                <div style="flex-grow: 1"><img src="https://place-hold.it/125x125"></div>
-                <div style="flex-grow: 8">Reviews: </div>
+                <h3 id="review">Review:  Mueller outdoor grills are a testament to quality and performance. Whether you're a casual griller or a passionate barbecue enthusiast, these grills are a fantastic choice for elevating your outdoor cooking game. 
+                    They offer a perfect blend of functionality, aesthetics, and durability, making them a top pick for any outdoor cooking enthusiast.
+                </h3>
+                </div>
         </section>
-        <section class="Label">
-            <h1>Mueller</h1>
-        </section>
-        <section class="col1of3">
-            <p>BBQ Buddy 14" Portable Charcoal Grill</p>
-            <img id="grills" src="https://place-hold.it/75x75">
-        </section>
-        <section class="col1of3">
-            <p>Mueller Ultra Gourmet Electric Grill</p>
-            <img id="grills" src="https://place-hold.it/75x75">
-        </section>
-        <section class="col1of3">
-            <p>23" Grill and Smoker</p>
-            <img id="grills" src="https://place-hold.it/75x75">
-        </section>
+        <div class="grills">
+            <section id="grill1">
+                <h2 id="grill-h2">BBQ Buddy 14" Portable Charcoal Grill</h2></a>
+                <img id="img1" src="images/grill1.jpg">
+            </section>
+
+            <section id="grill2">
+                <h2 id="grill-h2">Mueller Ultra Gourmet Electric Grill</h2>
+                <img id="img1" src="images/grill2.jpg">
+            </section>
+
+            <section id="grill3">
+                <h2 id="grill-h2">23" Portable Charcoal Grill and Smoker</h2>
+                <img id="img1" src="images/grill3.jpg">
+            </section>
+        </div>
     </body>
 </html>
