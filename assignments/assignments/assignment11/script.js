@@ -29,7 +29,6 @@ const getMovieItem = (movie) => {
 
     let ul = document.createElement("ul");
     section.append(ul);
-    // section.classList.add("title");
     ul.append(getTitle(movie.title));
     ul.append(getLi(`Director: `+movie.director));
     ul.append(getActors(movie.actors));
